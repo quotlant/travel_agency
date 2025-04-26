@@ -1,0 +1,84 @@
+div {
+  display: grid;
+}
+
+header {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: goldenrod;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px; /*makes the logo round*/
+  float: left; /*aligns the logo to the left*/
+}
+
+ul {
+  display: flex;
+  justify-content: center; /* Adjust as needed */
+  align-items: center; /* Adjust as needed */
+  gap: 100px; /* adds space between the items */
+  font-size: 20px;
+}
+
+.explore {
+  display: flex;
+  justify-content: center; /*adjust content within the flexbox to center*/
+
+  font-style: italic;
+}
+
+.centering {
+  text-align: center;
+}
+
+.button1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 200px; /*  */
+  height: ; /*  */
+
+  font-family: "Trebuchet MS", "Lucida Sans", Arial, sans-serif;
+  font-size: large;
+
+  font-weight: 700;
+  background-color: khaki;
+}
+
+.container {
+  display: grid; /*in css we give our container the display of grid */
+  grid-template-rows: auto;
+  grid-template-columns: ;
+}
+
+.image-size {
+  padding: 20px; /* this is used to define the space between elements */
+  height: auto;
+  width: auto;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.item1 {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.item2 {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.item3 {
+  grid-row: 3;
+  grid-column: 1;
+}

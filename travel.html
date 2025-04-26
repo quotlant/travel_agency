@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="travel.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <title>QUOTLANT TRAVEL AGENCY</title>
+  </head>
+  <body>
+    <div>
+      <header>
+        <img
+          src="assets/image.jpg"
+          alt="Quotlant Travel Agency Logo"
+          class="logo"
+        />
+        <h1>QUOTLANT TRAVEL AGENCY</h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destination">Destinations</a></li>
+            <li><a href="#tours">Tours</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <div class="hero">
+      <h1 class="explore">Explore Kenya</h1>
+      <h2 class="centering">Travel around Kenya</h2>
+      <button class="button1">Explore Destinations</button>
+      <img
+        src="assets/1_uBf0lzGGpLkIVeptr7RKvg.jpg"
+        alt="elephant in the wilderness"
+        class="heroo"
+      />
+    </div>
+    <!-- creating a grid needs a container and some items inside of it and on the css side the display should be grid-->
+    <div class="container">
+      <!-- to create cards using bootstrap, you use the class 'card'-->
+      <div class="card item1" style="width: 18rem">
+        <h4 class="card-title">Chale Island, Diani</h4>
+        <img
+          src="assets/IMG_5918.JPG"
+          alt="Chale island Diani"
+          class="image-size"
+        />
+        <!-- use the class card-body for the body of the card-->
+        <div class="card-body">
+          <p>
+            Chale Island is set on a unique private island in Diani, surrounded
+            by beautiful white sandy beaches.
+          </p>
+          <!--use anchor tag or button tag for links -->
+          <a href="#tours" class="btn btn-primary">BOOK A TOUR</a>
+        </div>
+      </div>
+
+      <div class="card item2" style="width: 18rem">
+        <h4 class="card-title">Mombasa Island</h4>
+        <img src="assets/IMG_5920.JPG" alt="mombasa town" class="image-size" />
+        <div class="card-body">
+          <p>
+            Mombasa is a coastal city in southeastern Kenya along the Indian
+            Ocean. It was the first capital of British East Africa, before
+            Nairobi was elevated to capital status in 1907
+          </p>
+          <a href="#tours" class="btn btn-primary">BOOK A TOUR</a>
+        </div>
+      </div>
+
+      <div class="card item3" style="width: 18rem">
+        <h4 class="card-title">Kisumu City</h4>
+        <img src="assets/IMG_5919.JPG" alt="kisumu city" class="image-size" />
+        <div class="card-body">
+          <p>
+            Kisumu is a Kenyan port city on Lake Victoria. It’s known for
+            lakeside viewpoints at Dunga Hill Camp and Hippo Point. The Kisumu
+            Impala Sanctuary shelters herds of impalas and zebras.
+          </p>
+          <a href="#tours" class="btn btn-primary">BOOK A TOUR</a>
+        </div>
+      </div>
+    </div>
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <!-- The data-bs-toggle, data-bs-target, and aria-* attributes are used to enable Bootstrap's accordion functionality.
+                 - data-bs-toggle="collapse": Toggles the visibility of the collapsible content.
+                 - data-bs-target="#collapseOne": Specifies the ID of the collapsible content to toggle.
+                 - aria-expanded="true": Indicates whether the collapsible content is currently expanded.
+                 - aria-controls="collapseOne": Identifies the collapsible content controlled by this button. -->
+        <h2 class="accordion-header" id="headingOne">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseOne"
+            aria-expanded="false"
+            aria-controls="collapseOne"
+          >
+            <strong>BOOK TOUR TO DIANI</strong>
+          </button>
+        </h2>
+        <div
+          id="collapseOne"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <strong>BOOK DIANI TOUR</strong> Escape to Chale Island, Kenya’s
+            private island paradise, just 10km south of Diani Beach. This
+            full-day tour offers a scenic boat ride across turquoise waters,
+            with opportunities for snorkeling, swimming, and birdwatching amidst
+            vibrant coral reefs and mangrove forests. Explore the Gazi Women’s
+            Boardwalk, relax on pristine white-sand beaches, and enjoy a
+            delicious seafood lunch at The Sands at Chale Island Resort & Spa.
+            Perfect for couples, families, or adventure seekers, this tour
+            blends relaxation and exploration in a breathtaking tropical
+            setting.
+
+            <strong>Pricing</strong>
+
+            Prices start at approximately $80-$120 per person, including hotel
+            transfers, entrance fees, guided tours, and lunch. Costs vary based
+            on group size, season, and operator. Contact us for tailored
+            packages and group discounts
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo"
+            aria-expanded="false"
+            aria-controls="collapseTwo"
+          >
+            <strong>BOOK TOUR TO MOMBASA</strong>
+          </button>
+        </h2>
+        <div
+          id="collapseTwo"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <strong>BOOK MOMBASA TOUR</strong> Immerse yourself in Mombasa,
+            Kenya’s coastal gem blending Swahili, Arab, and Portuguese heritage.
+            This full-day tour visits the historic Fort Jesus Museum, the
+            vibrant Old Town with its narrow streets and spice markets, and the
+            iconic Elephant Tusks on Moi Avenue. Explore the Akamba Wood Carving
+            Center and enjoy lunch at a seaside restaurant like Tamarind
+            Mombasa. Ideal for history buffs and culture seekers, this tour
+            captures Mombasa’s multicultural charm and bustling port city vibe.
+
+            <strong>Price Overview</strong>
+
+            Prices start at $80-$120 per person, covering hotel transfers,
+            entrance fees, guided tours, and lunch. Prices depend on group size,
+            season, and operator. Reach out for exclusive deals and group
+            discounts.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button
+            class="accordion-button"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapseThree"
+            aria-expanded="false"
+            aria-controls="collapseThree"
+          >
+            <strong>BOOK TOUR TO KISUMU</strong>
+          </button>
+        </h2>
+        <div
+          id="collapseThree"
+          class="accordion-collapse collapse show"
+          aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample"
+        >
+          <div class="accordion-body">
+            <strong>BOOK KISUMU TOUR</strong> Discover Kisumu, Kenya’s vibrant
+            lakeside city on Lake Victoria, known for its rich Luo culture and
+            scenic beauty. This half-day tour explores key attractions like the
+            bustling Kibuye Market, the Kisumu Museum showcasing Nyanza Province
+            artifacts, and the serene Dunga Beach for stunning lake views and
+            fresh tilapia. Visit Hippo Point for iconic sunsets and the Kisumu
+            Impala Sanctuary to see wildlife like impalas and zebras. Perfect
+            for culture enthusiasts and nature lovers, this tour offers a
+            glimpse into Kisumu’s history, trade heritage, and relaxed charm.
+            Price Overview Prices range from $50-$80 per person, including hotel
+            transfers, guided tours, and entrance fees. Costs may vary based on
+            group size and season. Contact us for customized options and group
+            rates!
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Section element creates a  block for the contact form, with id="contacts" to link to the navbar -->
+    <section id="contacts" class="py-5">
+      <!-- Container class centers content and adds responsive padding/margins -->
+      <div class="container">
+        <!-- Form element is the main wrapper for collecting user input -->
+        <form class="row g-3">
+          <!-- row class creates a Bootstrap grid row; g-3 adds spacing (gutters) between columns -->
+
+          <!-- First input field for the user's name -->
+          <div class="col-md-6">
+            <!-- col-md-6 makes this column take half the width on medium screens and above -->
+            <label for="name" class="form-label">Name</label>
+            <!-- form-label styles the label text for the input -->
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Your name"
+              required
+            />
+            <!-- input with type="text" for plain text; form-control styles it with Bootstrap; id links to label; required ensures the field isn't empty -->
+          </div>
+
+          <!-- Second input field for the user's email -->
+          <div class="col-md-6">
+            <!-- Another half-width column for the email field -->
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Your email"
+              required
+            />
+            <!-- type="email" validates email format; form-control for styling; required for validation -->
+          </div>
+
+          <!-- Dropdown for selecting a destination -->
+          <div class="col-12">
+            <!-- col-12 makes this field full-width on all screen sizes -->
+            <label for="destination" class="form-label">Destination</label>
+            <select class="form-select" id="destination" required>
+              <!-- form-select styles the dropdown menu -->
+              <option selected disabled value="">Select destination</option>
+              <!-- Default option is disabled and empty to prompt user selection -->
+              <option value="chale-island">Chale Island, Diani</option>
+              <option value="mombasa">Mombasa City</option>
+              <option value="kisumu">Kisumu City</option>
+              <!-- Options list the available destinations with unique values -->
+            </select>
+          </div>
+
+          <!-- Textarea for the user's message -->
+          <div class="col-12">
+            <!-- Full-width column for the message field -->
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="4"
+              placeholder="Your message"
+              required
+            ></textarea>
+            <!-- textarea allows multi-line input; form-control for styling; rows="4" sets height; required for validation -->
+          </div>
+
+          <!-- Submit button to send the form -->
+          <div class="col-12 text-center">
+            <!-- Full-width column with text-center to align button -->
+            <button class="btn btn-primary" type="submit">Submit</button>
+            <!-- btn and btn-primary style the button; type="submit" triggers form submission -->
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <!-- Footer content -->
+        <p>&copy; 2023 Quotlant Travel Agency. All rights reserved.</p>
+        <p>Follow us on social media:</p>
+        <ul class="social-media">
+          <li>
+            <a href="https://facebook.com" target="_blank">
+              <i class="fab fa-facebook"></i> Facebook
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank">
+              <i class="fab fa-twitter"></i> Twitter
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
